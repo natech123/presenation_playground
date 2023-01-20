@@ -990,6 +990,28 @@ files = [
 ]
 
 [[package]]
+name = "ipycytoscape"
+version = "1.3.3"
+description = "A Cytoscape widget for Jupyter"
+category = "main"
+optional = false
+python-versions = "*"
+files = [
+    {file = "ipycytoscape-1.3.3-py2.py3-none-any.whl", hash = "sha256:4bc205724971f5f7a3fc2b09dfec20c357c4c6dfa2b4bd41e7c33c995c3f6906"},
+    {file = "ipycytoscape-1.3.3.tar.gz", hash = "sha256:b6f3199df034f088e92d388e27e629f58ae2901b213cb9299e5b564272f9a2f8"},
+]
+
+[package.dependencies]
+ipywidgets = ">=7.6.0"
+spectate = ">=1.0.0"
+
+[package.extras]
+docs = ["jupyter-sphinx (>=0.3.1)", "nbsphinx", "nbsphinx-link", "networkx", "pandas", "sphinx", "sphinx-autobuild (>=2020.9.1)", "sphinx-copybutton", "sphinx-rtd-theme"]
+examples = ["monotonic", "pandas", "py2neo"]
+neo4j = ["monotonic", "py2neo"]
+test = ["nbclassic (>=0.2.8)", "nbval", "networkx", "pandas", "pre-commit", "pytest (>4.6)", "pytest-cov"]
+
+[[package]]
 name = "ipydatawidgets"
 version = "4.3.2"
 description = "A set of widgets to help facilitate reuse of large datasets across widgets"
@@ -1818,6 +1840,13 @@ files = [
     {file = "Pillow-9.4.0-1-cp39-cp39-macosx_10_10_x86_64.whl", hash = "sha256:b8c2f6eb0df979ee99433d8b3f6d193d9590f735cf12274c108bd954e30ca858"},
     {file = "Pillow-9.4.0-1-pp38-pypy38_pp73-macosx_10_10_x86_64.whl", hash = "sha256:b70756ec9417c34e097f987b4d8c510975216ad26ba6e57ccb53bc758f490dab"},
     {file = "Pillow-9.4.0-1-pp39-pypy39_pp73-macosx_10_10_x86_64.whl", hash = "sha256:43521ce2c4b865d385e78579a082b6ad1166ebed2b1a2293c3be1d68dd7ca3b9"},
+    {file = "Pillow-9.4.0-2-cp310-cp310-macosx_10_10_x86_64.whl", hash = "sha256:9d9a62576b68cd90f7075876f4e8444487db5eeea0e4df3ba298ee38a8d067b0"},
+    {file = "Pillow-9.4.0-2-cp311-cp311-macosx_10_10_x86_64.whl", hash = "sha256:87708d78a14d56a990fbf4f9cb350b7d89ee8988705e58e39bdf4d82c149210f"},
+    {file = "Pillow-9.4.0-2-cp37-cp37m-macosx_10_10_x86_64.whl", hash = "sha256:8a2b5874d17e72dfb80d917213abd55d7e1ed2479f38f001f264f7ce7bae757c"},
+    {file = "Pillow-9.4.0-2-cp38-cp38-macosx_10_10_x86_64.whl", hash = "sha256:83125753a60cfc8c412de5896d10a0a405e0bd88d0470ad82e0869ddf0cb3848"},
+    {file = "Pillow-9.4.0-2-cp39-cp39-macosx_10_10_x86_64.whl", hash = "sha256:9e5f94742033898bfe84c93c831a6f552bb629448d4072dd312306bab3bd96f1"},
+    {file = "Pillow-9.4.0-2-pp38-pypy38_pp73-macosx_10_10_x86_64.whl", hash = "sha256:013016af6b3a12a2f40b704677f8b51f72cb007dac785a9933d5c86a72a7fe33"},
+    {file = "Pillow-9.4.0-2-pp39-pypy39_pp73-macosx_10_10_x86_64.whl", hash = "sha256:99d92d148dd03fd19d16175b6d355cc1b01faf80dae93c6c3eb4163709edc0a9"},
     {file = "Pillow-9.4.0-cp310-cp310-macosx_10_10_x86_64.whl", hash = "sha256:2968c58feca624bb6c8502f9564dd187d0e1389964898f5e9e1fbc8533169157"},
     {file = "Pillow-9.4.0-cp310-cp310-macosx_11_0_arm64.whl", hash = "sha256:c5c1362c14aee73f50143d74389b2c158707b4abce2cb055b7ad37ce60738d47"},
     {file = "Pillow-9.4.0-cp310-cp310-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:bd752c5ff1b4a870b7661234694f24b1d2b9076b8bf337321a814c612665f343"},
@@ -2620,6 +2649,18 @@ files = [
 ]
 
 [[package]]
+name = "spectate"
+version = "1.0.1"
+description = "Track changes to mutable data types."
+category = "main"
+optional = false
+python-versions = ">=3.6"
+files = [
+    {file = "spectate-1.0.1-py2.py3-none-any.whl", hash = "sha256:c4585194c238979f953fbf2ecf9f94c84d9d0a929432c7104e39984f52c9e718"},
+    {file = "spectate-1.0.1.tar.gz", hash = "sha256:49a2dde0962fcecf120cb361cc293989489078eb29ba1d8c3d342a741e898b7e"},
+]
+
+[[package]]
 name = "stack-data"
 version = "0.6.2"
 description = "Extract data from python stack frames and tracebacks for informative displays"
@@ -3235,4 +3276,4 @@ files = [
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.10"
-content-hash = "bc7388aacf8e15f12a0b5ab55f7090245966e54985b3f08f8e5e10f652cb65e2"
+content-hash = "3302ccdea721e355e92029b919ae1ce09ff9711f178396a1a15c66ea85c9cb47"
