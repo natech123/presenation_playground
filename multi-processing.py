@@ -33,14 +33,14 @@ def random_calc(n:int) -> int:
 
 
 if __name__ == '__main__':
-    print("👉Starting single processing...")
+    print("Starting single processing...")
     start = time.perf_counter()
     res = np.array(list(map(random_calc, tqdm(a))))
     end = time.perf_counter()
     original_time = end-start
-    print(f"✅ Done in {original_time} seconds \n")
+    print(f"Done in {original_time} seconds \n")
 
-    print("👉Starting multi processing...")
+    print("Starting multi processing...")
     start = time.perf_counter()
     with Pool(num_jobs) as p:
         a_split = np.array_split(a, num_jobs, axis=0)
