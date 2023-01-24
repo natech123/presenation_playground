@@ -7,11 +7,11 @@ def thread_function(name):
     print(f"Thread {name}: finishing")
 
 if __name__ == "__main__":
-    # start=time.perf_counter()
-    # for i in range(10):
-    #     thread_function(i)
-    # end=time.perf_counter()
-    # print(f"✅ Done in {end-start} seconds")
+    start=time.perf_counter()
+    for i in range(10):
+        thread_function(i)
+    end=time.perf_counter()
+    print(f"✅ Done in {end-start} seconds")
 
     start=time.perf_counter()
     print("Main    : before creating thread")

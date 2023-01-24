@@ -31,7 +31,7 @@ if __name__ == "__main__":
     print(f"Cython Calculation took {cython_time} seconds")
     print(f"Cython is {normal_time/cython_time} times faster")
 
-    print("Start Cython Calculation...")
+    print("Start Adapted Cython Calculation...")
     start = time.perf_counter()
     cca()
     end = time.perf_counter()

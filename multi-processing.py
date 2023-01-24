@@ -5,22 +5,6 @@ from tqdm import tqdm
 
 num_jobs = cpu_count()
 
-# increase matrix size to simulate more data (Increase paralellism possibilities...)
-# increase indivudual scalar values to increase cpu_bound (fibonacci) difficulty
-# a = np.ones((1000,5)) * 20
-
-# def fibonacci_of(n:int) -> int:
-#     if n in {0, 1}:
-#         return n
-#     res = fibonacci_of(n - 1) + fibonacci_of(n - 2)
-#     return res
-
-# def element_wise_cpu_bound_compute(x: float) -> int:
-#     return fibonacci_of(int(x))
-
-# def transform(a: np.ndarray) -> np.ndarray:
-#     res = np.array([element_wise_cpu_bound_compute(el) for el in a.flatten()]).reshape(a.shape)
-#     return res
 
 a = np.random.randint(0,20, 100_000_000, dtype="int64")
 
